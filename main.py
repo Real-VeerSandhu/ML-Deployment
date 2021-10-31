@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from joblib import load
 
 app = Flask(__name__)
-model = load('app/linear_model.joblib')
+model = load('modelling/linear_model.joblib')
 
 @app.route('/')
 def home():
