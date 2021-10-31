@@ -1,4 +1,7 @@
-from flask import Flask
+from flask import Flask, request, jsonify
+from joblib import load
+
+model = load('app/linear_model.joblib')
 
 app = Flask(__name__)
 
