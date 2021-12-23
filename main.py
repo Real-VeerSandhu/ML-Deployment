@@ -11,6 +11,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     message = request.get_json(force=True)
+    length = len(message)
     
     output = round(model.predict([[message['Height']]])[0][0], 1)
     print(output)
