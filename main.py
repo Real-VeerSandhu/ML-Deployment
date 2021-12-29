@@ -17,5 +17,8 @@ def predict():
     print(output)
     return jsonify(output)
 
+def test():
+    return 'Test Complete'
+
 if __name__ == '__main__':
     app.run(debug=True)
