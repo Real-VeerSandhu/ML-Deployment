@@ -20,8 +20,5 @@ def predict():
 def test():
     return 'Test Complete'
 
-def out():
-    return 999 # Test out
-
 if __name__ == '__main__':
     app.run(debug=True)
