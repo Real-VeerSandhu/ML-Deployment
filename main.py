@@ -1,3 +1,4 @@
+from re import X
 from flask import Flask, request, jsonify
 from joblib import load
 
@@ -19,6 +20,13 @@ def predict():
 
 def test():
     return 'Test Complete'
+
+def calc(x, y, z):
+    total = x + y + z
+    max = max([x,y,z])
+    min = min([x,y,z])
+
+    return total, max, min
 
 if __name__ == '__main__':
     app.run(debug=True)
