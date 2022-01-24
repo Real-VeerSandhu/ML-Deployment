@@ -9,4 +9,6 @@ print('Prediction: ', r.json(), len(r))
 def read(link, response, input):
     out = request.post(link, json={'Height:': input})
 
+    print('Response:', out)
     print('Type:', type(out))
+    print('Size:', len(out))
