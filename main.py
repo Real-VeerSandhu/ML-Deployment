@@ -23,7 +23,7 @@ def test():
 
 def calc(x, y, z):
     total = x + y + z
-    max = max([x,y,z])
+    max = max([x,y,z]) # 0
     min = min([x,y,z])
 
     return total, max, min
